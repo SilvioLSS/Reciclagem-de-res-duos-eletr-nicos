@@ -1,0 +1,107 @@
+@import url('https://fonts.googleapis.com/css2?family=Anton+SC&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Anton+SC&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Anton+SC&family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Anton+SC&family=Arsenal+SC:ital,wght@0,400;0,700;1,400;1,700&family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Anton+SC&family=Arsenal+SC:ital,wght@0,400;0,700;1,400;1,700&family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');
+
+header{
+    text-align: center;
+}
+
+header nav{
+    background-color: #eeff75;
+    margin: 1px;
+    padding: 1px;
+}
+
+.titulo{
+    color: #869d00;
+    font-family: "Anton SC";
+}
+
+header nav ul li{
+    display: inline;
+    margin: 15px;
+}
+
+a{
+    text-decoration: none;
+    font-family: "Rubik";
+    color: #bace3b;
+    border-left: 4px;
+  }
+  
+  a:hover {
+    padding-left: 30px;
+    border-left: 4px solid #869d00;
+    color: #869d00;
+    transition: .4s;
+  }
+
+  main{
+    text-align: center;
+  }
+
+  .subtitulo{
+    color: #869d00;
+  }
+
+  .texto{
+    font-family: "Arsenal SC";
+  }
+
+  .texto2{
+    font-family: "Lato";
+  }
+
+  #faq{
+    text-align: left;
+  }
+
+  .cabecalho{
+    visibility: hidden;
+  }
+  .secao1 {
+    visibility: hidden;
+  }
+  .secao2{
+    visibility: hidden;
+  }
+  .secao3{
+    visibility: hidden;
+  }
+  .secao4{
+    visibility: hidden;
+  }
+  .secao5{
+    visibility: hidden;
+  }
+  .secao6{
+    visibility: hidden;
+  }
+  .secao7{
+    visibility: hidden;
+  }
+  .secao8{
+    visibility: hidden;
+  }
+  .secao9{
+    visibility: hidden;
+  }
+  .secao10{
+    visibility: hidden;
+  }
+  .rodape{
+    visibility: hidden;
+  }
+
+  #faq{
+    visibility: hidden;
+  }
+
+  footer{
+    background-color: #eeff75;
+    text-align: center;
+    padding: 15px;
+    font-family: "Kanit";
+  }
