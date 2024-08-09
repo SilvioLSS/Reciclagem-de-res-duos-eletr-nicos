@@ -1,107 +1,130 @@
 @import url('https://fonts.googleapis.com/css2?family=Anton+SC&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Anton+SC&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Anton+SC&family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Anton+SC&family=Arsenal+SC:ital,wght@0,400;0,700;1,400;1,700&family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Anton+SC&family=Arsenal+SC:ital,wght@0,400;0,700;1,400;1,700&family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Arsenal+SC:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100..900&display=swap');
 
-header{
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Rubik", sans-serif;
+}
+
+header {
+  text-align: center;
+  padding: 10px;
+}
+
+header nav {
+  background-color: #eeff75;
+  padding: 10px;
+}
+
+.titulo {
+  color: #869d00;
+  font-family: "Anton SC", sans-serif;
+  font-size: 1.8em;
+  margin: 10px 0;
+}
+
+header nav ul {
+  padding: 0;
+  margin: 0;
+  list-style-type: none;
+  text-align: center;
+}
+
+header nav ul li {
+  margin: 5px 0;
+}
+
+a {
+  text-decoration: none;
+  color: #bace3b;
+  padding: 10px;
+  display: block; /* Links ocupam toda a linha no celular */
+  transition: .4s;
+}
+
+a:hover {
+  background-color: #869d00;
+  color: white;
+}
+
+main {
+  padding: 20px;
+}
+
+.subtitulo {
+  color: #869d00;
+  font-size: 1.5em;
+  margin: 15px 0;
+}
+
+.texto {
+  font-family: "Arsenal SC", sans-serif;
+  font-size: 1em;
+  line-height: 1.5em;
+}
+
+.texto2 {
+  font-family: "Lato", sans-serif;
+  font-size: 1em;
+  line-height: 1.5em;
+}
+
+#faq {
+  text-align: left;
+  margin-top: 20px;
+}
+
+img{
+  width: 100%;
+}
+
+footer {
+  background-color: #eeff75;
+  text-align: center;
+  padding: 15px;
+  font-family: "Kanit", sans-serif;
+  font-size: 0.9em;
+}
+
+/* Media Queries para telas maiores */
+@media (min-width: 768px) {
+  header nav ul li {
+    display: inline-block; /* Links lado a lado em tablets */
+    margin: 0 15px;
+  }
+
+  a {
+    display: inline-block; /* Links lado a lado */
+    padding: 0 10px;
+  }
+}
+
+@media (min-width: 1024px) {
+  header nav {
+    padding: 20px;
+  }
+
+  main {
+    padding: 40px;
+  }
+
+  .subtitulo {
+    font-size: 2em;
+  }
+
+  .texto, .texto2 {
+    font-size: 1.2em;
+  }
+
+  body{
     text-align: center;
+  }
+
+  img{
+    width: 30%;
+  }
 }
-
-header nav{
-    background-color: #eeff75;
-    margin: 1px;
-    padding: 1px;
-}
-
-.titulo{
-    color: #869d00;
-    font-family: "Anton SC";
-}
-
-header nav ul li{
-    display: inline;
-    margin: 15px;
-}
-
-a{
-    text-decoration: none;
-    font-family: "Rubik";
-    color: #bace3b;
-    border-left: 4px;
-  }
-  
-  a:hover {
-    padding-left: 30px;
-    border-left: 4px solid #869d00;
-    color: #869d00;
-    transition: .4s;
-  }
-
-  main{
-    text-align: center;
-  }
-
-  .subtitulo{
-    color: #869d00;
-  }
-
-  .texto{
-    font-family: "Arsenal SC";
-  }
-
-  .texto2{
-    font-family: "Lato";
-  }
-
-  #faq{
-    text-align: left;
-  }
-
-  .cabecalho{
-    visibility: hidden;
-  }
-  .secao1 {
-    visibility: hidden;
-  }
-  .secao2{
-    visibility: hidden;
-  }
-  .secao3{
-    visibility: hidden;
-  }
-  .secao4{
-    visibility: hidden;
-  }
-  .secao5{
-    visibility: hidden;
-  }
-  .secao6{
-    visibility: hidden;
-  }
-  .secao7{
-    visibility: hidden;
-  }
-  .secao8{
-    visibility: hidden;
-  }
-  .secao9{
-    visibility: hidden;
-  }
-  .secao10{
-    visibility: hidden;
-  }
-  .rodape{
-    visibility: hidden;
-  }
-
-  #faq{
-    visibility: hidden;
-  }
-
-  footer{
-    background-color: #eeff75;
-    text-align: center;
-    padding: 15px;
-    font-family: "Kanit";
-  }
